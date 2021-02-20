@@ -23,7 +23,7 @@
 	border-radius: 10px;
 	z-index: 10;
 	animation-name: mycar;
-	animation-duration: 10s;
+	animation-duration: 8s;
 	animation-delay: 2s;
 	animation-timing-function: linear;
 }
@@ -33,11 +33,11 @@
 	height: 100px;
 	position: absolute;
 	bottom: 150px;
-	left: 1300px;
+	left: 1100px;
 	border-radius: 10px;
 	z-index: 10;
 	animation-name: mycar2;
-	animation-duration: 10s;
+	animation-duration: 8s;
 	animation-delay: 2s;
 	animation-timing-function: linear;
 	animation-direction: alternate;
@@ -51,8 +51,9 @@
 	border-radius: 10px;
 	z-index: 10;
 	animation-name: mysun;
-	animation-duration: 10s;
+	animation-timing-function: ease;
 	animation-delay: 2s;
+	animation-duration: 10s;
 }
 
 
@@ -71,7 +72,7 @@
 
 @keyframes  mycar2{
 	from{
-		left: 1200px;
+		left: 1100px;
 	}
 	to{
 		left: 5px;
@@ -79,13 +80,7 @@
 }
 
 @keyframes mysun{
-	from{
-		top: 100px;
-		left: 500px;
-
-	}
-	to{
-		top: 600px;
-		left: 100px:;
+	100% {
+		transform: rotate(180deg);
 	}
 }
